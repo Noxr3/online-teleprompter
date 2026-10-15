@@ -44,7 +44,7 @@
           "value": "dokki-prompter.vercel.app"
         }
       ],
-      "destination": "https://online-teleprompter.vercel.app/:path*",
+      "destination": "https://free-teleprompter.vercel.app/:path*",
       "permanent": true
     }
   ]

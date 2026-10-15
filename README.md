@@ -11,9 +11,9 @@
 </p>
 
 <p align="center">
-  <a href="https://online-teleprompter.vercel.app"><b>Try it live</b></a> ·
+  <a href="https://free-teleprompter.vercel.app"><b>Try it live</b></a> ·
   <a href="README.zh-CN.md">简体中文</a> ·
-  <a href="https://online-teleprompter.vercel.app/guide">How it works</a> ·
+  <a href="https://free-teleprompter.vercel.app/guide">How it works</a> ·
   <a href="#deploy-your-own">Deploy your own</a>
 </p>
 

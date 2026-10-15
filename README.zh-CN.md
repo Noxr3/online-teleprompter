@@ -11,9 +11,9 @@
 </p>
 
 <p align="center">
-  <a href="https://online-teleprompter.vercel.app/zh/"><b>在线试用</b></a> ·
+  <a href="https://free-teleprompter.vercel.app/zh/"><b>在线试用</b></a> ·
   <a href="README.md">English</a> ·
-  <a href="https://online-teleprompter.vercel.app/zh/guide">使用指南</a> ·
+  <a href="https://free-teleprompter.vercel.app/zh/guide">使用指南</a> ·
   <a href="#部署自己的版本">部署自己的版本</a>
 </p>
 

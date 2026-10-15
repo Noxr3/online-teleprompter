@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://online-teleprompter.vercel.app/sitemap.xml
+Sitemap: https://free-teleprompter.vercel.app/sitemap.xml

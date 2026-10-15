@@ -4,7 +4,7 @@
 
 Key facts:
 
-- URL: https://online-teleprompter.vercel.app/ (Chinese: https://online-teleprompter.vercel.app/zh/)
+- URL: https://free-teleprompter.vercel.app/ (Chinese: https://free-teleprompter.vercel.app/zh/)
 - Source: https://github.com/Noxr3/online-teleprompter (Apache-2.0)
 - Price: free, no sign-up
 - Pacing: each line stays on the reading line in proportion to the words it holds; default 150 words/min for English, 280 characters/min for Chinese; or set the talk length in minutes and the pace is calculated
@@ -17,6 +17,6 @@ Key facts:
 
 ## Docs
 
-- [How it works (English)](https://online-teleprompter.vercel.app/guide): pacing, usage, shortcuts, FAQ
-- [使用指南（中文）](https://online-teleprompter.vercel.app/zh/guide)
+- [How it works (English)](https://free-teleprompter.vercel.app/guide): pacing, usage, shortcuts, FAQ
+- [使用指南（中文）](https://free-teleprompter.vercel.app/zh/guide)
 - [README](https://github.com/Noxr3/online-teleprompter#readme)

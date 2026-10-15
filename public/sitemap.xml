@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://online-teleprompter.vercel.app/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://online-teleprompter.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://online-teleprompter.vercel.app/zh/"/>
+    <loc>https://free-teleprompter.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://free-teleprompter.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://free-teleprompter.vercel.app/zh/"/>
   </url>
   <url>
-    <loc>https://online-teleprompter.vercel.app/zh/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://online-teleprompter.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://online-teleprompter.vercel.app/zh/"/>
+    <loc>https://free-teleprompter.vercel.app/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://free-teleprompter.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://free-teleprompter.vercel.app/zh/"/>
   </url>
   <url>
-    <loc>https://online-teleprompter.vercel.app/guide</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://online-teleprompter.vercel.app/guide"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://online-teleprompter.vercel.app/zh/guide"/>
+    <loc>https://free-teleprompter.vercel.app/guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://free-teleprompter.vercel.app/guide"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://free-teleprompter.vercel.app/zh/guide"/>
   </url>
   <url>
-    <loc>https://online-teleprompter.vercel.app/zh/guide</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://online-teleprompter.vercel.app/guide"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://online-teleprompter.vercel.app/zh/guide"/>
+    <loc>https://free-teleprompter.vercel.app/zh/guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://free-teleprompter.vercel.app/guide"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://free-teleprompter.vercel.app/zh/guide"/>
   </url>
 </urlset>
