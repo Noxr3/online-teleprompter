@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dokki-lab/dokki-prompter.git"
+    "url": "git+https://github.com/Noxr3/dokki-prompter.git"
   },
   "keywords": ["teleprompter", "prompter", "presentation", "speech", "pitch"],
   "scripts": {

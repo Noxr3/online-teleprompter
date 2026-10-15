@@ -58,7 +58,8 @@ const zh = {
   mirror: '镜像，用于提词玻璃（M）',
   fullscreen: '全屏（F）',
   stageLabel: '讲稿，点按开始或暂停',
-  ended: '讲稿结束'
+  ended: '讲稿结束',
+  starCta: '开源 · 在 GitHub 点个 Star'
 };
 
 const en = {
@@ -119,7 +120,8 @@ const en = {
   mirror: 'Mirror for a beam-splitter glass (M)',
   fullscreen: 'Full screen (F)',
   stageLabel: 'Script — tap to play or pause',
-  ended: 'End of script'
+  ended: 'End of script',
+  starCta: 'Open source · Star on GitHub'
 };
 
 const samples = {

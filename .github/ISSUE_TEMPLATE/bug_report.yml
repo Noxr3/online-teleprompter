@@ -1,0 +1,23 @@
+name: Bug report
+description: Something doesn't work the way it should.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you saw instead. A screenshot helps.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Chrome 140 on macOS, Safari on iPhone 15…
+    validations:
+      required: true
+  - type: textarea
+    id: script
+    attributes:
+      label: A few lines of script that show the problem (optional)
+      render: markdown

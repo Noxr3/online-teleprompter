@@ -4,7 +4,7 @@ import { store } from './store.js';
 import { createStage } from './stage.js';
 import { icon } from './icons.js';
 
-const REPO_URL = 'https://github.com/Dokki-lab/dokki-prompter';
+const REPO_URL = 'https://github.com/Noxr3/dokki-prompter';
 
 const $ = id => document.getElementById(id);
 const prefs = store.loadPrefs();
@@ -41,6 +41,7 @@ $('root').innerHTML = `
     <nav class="outline" aria-label="${t('outline')}">
       <div class="outline-head"><span>${t('outline')}</span><span>${t('outlineTime')}</span></div>
       <ol id="outline"></ol>
+      <a class="star-link" href="${REPO_URL}" target="_blank" rel="noopener">${icon.star}<span>${t('starCta')}</span></a>
     </nav>
     <section class="sheet">
       <div class="toolbar">
