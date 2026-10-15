@@ -1,6 +1,6 @@
 {
   "name": "online-teleprompter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A clean, private teleprompter for talks and pitches. Plain HTML, CSS and JavaScript; no build step, no dependencies, no server.",
   "private": true,
   "type": "module",

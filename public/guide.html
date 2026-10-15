@@ -38,6 +38,7 @@
           { "@type": "Question", "name": "Is my script uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. The script is saved only in your browser's local storage. The app has no server, no account and no analytics." } },
           { "@type": "Question", "name": "How is it different from other online teleprompters?", "acceptedAnswer": { "@type": "Answer", "text": "Most web teleprompters scroll at a fixed number of pixels per second, so the pace changes with font size and line length. Online Teleprompter paces each line by how many words it holds, so it keeps a steady speaking rate in words per minute at any text size." } },
           { "@type": "Question", "name": "What speed should I set?", "acceptedAnswer": { "@type": "Answer", "text": "Presentations are commonly delivered at about 130 to 160 words per minute; the default is 150. For Chinese the default is 280 characters per minute. You can also type the talk's length and the pace is worked out for you." } },
+          { "@type": "Question", "name": "Can it follow my voice?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Voice follow moves the script as you speak, waits when you pause and tolerates misheard words. It uses the browser's speech recognition in Chrome, Edge or Safari, which may send your voice to the browser's speech service; the script itself is never sent. It is off until you turn it on." } },
           { "@type": "Question", "name": "Does it work with teleprompter glass?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Mirror mode flips the text horizontally for beam-splitter glass. Press M on the stage to turn it on." } },
           { "@type": "Question", "name": "Can I use it on a phone or tablet?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It works in mobile browsers, and the screen stays awake while the script plays where the browser allows it." } },
           { "@type": "Question", "name": "Does it work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Once the page has loaded it needs no network. Installing it for fully offline use is on the roadmap." } }
@@ -70,6 +71,7 @@
         <li>Paces by speech, not pixels: words per minute for English, characters per minute for Chinese, Japanese and Korean.</li>
         <li>Default pace: 150 words per minute, or 280 Chinese characters per minute. Adjust in steps of 10.</li>
         <li>Type the length of your talk and the pace is worked out for you.</li>
+        <li>Voice follow (optional): the script moves as you speak, in English or Chinese, in Chrome, Edge and Safari.</li>
         <li>Mirror mode for beam-splitter teleprompter glass, full screen, and phone support.</li>
         <li>Your script never leaves your browser: no server, no account, no analytics.</li>
       </ul>
@@ -101,6 +103,7 @@ Today I want to show you **one simple idea**.   ← stressed words</code></pre>
             <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>Previous or next page</td></tr>
             <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>Pace up or down by 10</td></tr>
             <tr><td><kbd>+</kbd> <kbd>−</kbd></td><td>Larger or smaller text</td></tr>
+            <tr><td><kbd>V</kbd></td><td>Voice follow on or off</td></tr>
             <tr><td><kbd>M</kbd></td><td>Mirror the text for teleprompter glass</td></tr>
             <tr><td><kbd>F</kbd></td><td>Full screen</td></tr>
             <tr><td><kbd>Esc</kbd></td><td>Back to the editor</td></tr>
@@ -115,6 +118,7 @@ Today I want to show you **one simple idea**.   ← stressed words</code></pre>
       <h2>Questions</h2>
       <details><summary>Is it free?</summary><p>Yes. There is no sign-up and no paid tier, and the source code is open under the Apache 2.0 license.</p></details>
       <details><summary>Is my script uploaded anywhere?</summary><p>No. It is saved only in your browser's local storage. The app has no server, no account and no analytics, and it makes no third-party requests.</p></details>
+      <details><summary>Can it follow my voice?</summary><p>Yes. Press <kbd>V</kbd> on the stage, or the microphone button, to turn on voice follow. The script moves to wherever you are as you speak, waits when you pause, tolerates misheard words and ignores off-script asides. It uses your browser's speech recognition (Chrome, Edge or Safari), which may send your voice to the browser's speech service; your script is never sent. It's off until you turn it on.</p></details>
       <details><summary>What speed should I set?</summary><p>Presentations are commonly delivered at about 130 to 160 words per minute, and the default is 150. For Chinese the default is 280 characters per minute. Or type the talk's length and let the pace follow.</p></details>
       <details><summary>Does it work with teleprompter glass?</summary><p>Yes. Mirror mode flips the text for beam-splitter glass. Press <kbd>M</kbd> on the stage.</p></details>
       <details><summary>Can I use it on a phone or iPad?</summary><p>Yes. It works in mobile browsers, and the screen stays awake while the script plays where the browser allows it.</p></details>

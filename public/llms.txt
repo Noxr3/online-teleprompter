@@ -8,6 +8,7 @@ Key facts:
 - Source: https://github.com/Noxr3/online-teleprompter (Apache-2.0)
 - Price: free, no sign-up
 - Pacing: each line stays on the reading line in proportion to the words it holds; default 150 words/min for English, 280 characters/min for Chinese; or set the talk length in minutes and the pace is calculated
+- Voice follow (optional, off by default): the script moves as the speaker talks, using the browser's speech recognition (Chrome, Edge, Safari); it waits on pauses, tolerates misheard words and ignores off-script asides; English and Chinese; the voice may go to the browser's speech service, the script never does
 - Script format: `## Title` starts a page, one line per sentence, `**words**` are stressed
 - Stage: reading line, dimmed past lines, page jumps, pace and text-size controls, timer, mirror mode for beam-splitter teleprompter glass, full screen, screen wake lock
 - Works in desktop and mobile browsers; interface in English and Simplified Chinese

@@ -66,7 +66,7 @@ $('root').innerHTML = `
   <div class="stage-top">
     <button class="sbtn" id="exit" type="button" title="${t('doneTitle')}">${icon.close}${t('done')}</button>
     <div class="where"><span class="pn" id="sPage"></span><span class="pt" id="sTitle"></span></div>
-    <div class="clock"><b id="sElapsed">00:00</b> · ${t('remain')} <b id="sRemain">--:--</b></div>
+    <div class="clock"><span class="listen" id="listen" hidden>${t('listening')}</span><b id="sElapsed">00:00</b> · ${t('remain')} <b id="sRemain">--:--</b></div>
     <div class="track"><i id="sBar"></i></div>
   </div>
   <div class="viewport">
@@ -84,8 +84,21 @@ $('root').innerHTML = `
       <button class="ib a-small size-only" id="smaller" type="button" title="${t('smaller')}" aria-label="${t('smaller')}">A</button>
       <button class="ib a-big size-only" id="bigger" type="button" title="${t('bigger')}" aria-label="${t('bigger')}">A</button>
       <span class="div"></span>
+      <button class="ib" id="voice" type="button" aria-pressed="false" title="${t('voice')}" aria-label="${t('voice')}" hidden>${icon.mic}</button>
       <button class="ib" id="mirror" type="button" aria-pressed="false" title="${t('mirror')}" aria-label="${t('mirror')}">${icon.mirror}</button>
       <button class="ib" id="full" type="button" title="${t('fullscreen')}" aria-label="${t('fullscreen')}">${icon.full}</button>
+    </div>
+    <div class="stage-note" id="stageNote" role="status" hidden></div>
+    <div class="consent" id="consent" role="dialog" aria-modal="true" aria-labelledby="consentTitle" hidden>
+      <div class="consent-card">
+        <h2 id="consentTitle">${t('voiceConsentTitle')}</h2>
+        <p>${t('voiceConsentBody')}</p>
+        <p class="fine">${t('voiceConsentFine')}</p>
+        <div class="consent-actions">
+          <button class="sbtn" id="consentCancel" type="button">${t('cancel')}</button>
+          <button class="sbtn primary" id="consentOk" type="button">${icon.mic}${t('voiceConsentOk')}</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

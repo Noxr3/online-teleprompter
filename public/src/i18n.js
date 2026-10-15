@@ -60,6 +60,16 @@ const zh = {
   stageLabel: '讲稿，点按开始或暂停',
   ended: '讲稿结束',
   starCta: '开源 · 在 GitHub 点个 Star',
+  voice: '跟读：听你说话自动滚动（V）',
+  listening: '正在听',
+  voiceUnsupported: '这个浏览器不支持语音识别。请用 Chrome、Edge 或 Safari 打开。',
+  voiceDenied: '没有麦克风权限，已切回按语速滚动。',
+  voiceUnavailable: '语音识别暂时用不了，已切回按语速滚动。',
+  voiceConsentTitle: '打开跟读？',
+  voiceConsentBody: '跟读会用麦克风听你说话，讲到哪里，讲稿就滚到哪里。你停下，它也停下。',
+  voiceConsentFine: '语音识别由浏览器完成，你说的话可能会发送到浏览器厂商的语音服务（比如 Chrome 用 Google，Edge 用 Microsoft，Safari 用 Apple）。讲稿本身不会被发送。',
+  voiceConsentOk: '打开跟读',
+  cancel: '取消',
   guide: '使用指南',
   guideHref: '/zh/guide'
 };
@@ -124,6 +134,16 @@ const en = {
   stageLabel: 'Script — tap to play or pause',
   ended: 'End of script',
   starCta: 'Open source · Star on GitHub',
+  voice: 'Voice follow: scroll as you speak (V)',
+  listening: 'Listening',
+  voiceUnsupported: "This browser can't recognize speech. Open the prompter in Chrome, Edge or Safari.",
+  voiceDenied: 'No microphone access, so the script is back to a set pace.',
+  voiceUnavailable: "Speech recognition isn't available right now, so the script is back to a set pace.",
+  voiceConsentTitle: 'Turn on voice follow?',
+  voiceConsentBody: 'Voice follow listens through your microphone and keeps the script where you are. When you stop, it stops.',
+  voiceConsentFine: 'Your browser does the recognition, and what you say may be sent to its speech service (for example Google for Chrome, Microsoft for Edge, Apple for Safari). Your script is not sent.',
+  voiceConsentOk: 'Turn on',
+  cancel: 'Cancel',
   guide: 'How it works',
   guideHref: '/guide'
 };
@@ -143,6 +163,7 @@ const samples = {
 屏幕偏上有一条阅读线，读到哪里，就看那一行。
 按空格开始或暂停，左右方向键翻页，上下方向键调整语速。
 需要放在提词玻璃后面时，打开 **镜像**。
+想让讲稿跟着你说话走，按 V 打开 **跟读**。
 
 ## 讲稿存在哪里
 讲稿只保存在你自己的浏览器里，不会上传到任何服务器。
@@ -164,6 +185,7 @@ When you're ready, press Start in the top right corner.
 A reading line sits near the top of the screen. Keep your eyes on it.
 Press Space to play or pause, the left and right arrows to change page, and up and down to change the pace.
 Behind a beam-splitter glass, turn on **mirror**.
+Press V for **voice follow**, and the script will follow what you say.
 
 ## Where your script lives
 Your script stays in this browser. Nothing is uploaded anywhere.

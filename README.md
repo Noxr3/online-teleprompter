@@ -39,9 +39,10 @@ Online Teleprompter paces the script in **words per minute** (characters per min
 
 - **Three rules to write a script.** `## Title` starts a page, every other line is one thing you say, and `**words**` are stressed.
 - **Paced like speech.** Set the pace in words or characters per minute, or type the length of the talk and the pace follows. The outline shows when each page starts.
+- **Or let it follow your voice.** Turn on voice follow and the script moves as you speak: it waits when you pause, skips past words the recognizer gets wrong, and ignores off-script asides. English and Chinese.
 - **A stage built for reading.** One reading line, dimmed past lines, highlighted stress, page jumps, pace and text-size controls, a timer and time left.
 - **Ready for real rigs.** Mirror mode for beam-splitter glass, full screen, and the screen stays awake while it plays.
-- **Private by design.** No server, no account, no analytics, no third-party requests. The script saves to your device; import and export Markdown, or drop a `.md` file on the page.
+- **Private by design.** No server, no account, no analytics, no third-party requests. The script saves to your device; import and export Markdown, or drop a `.md` file on the page. Voice follow is off until you turn it on; it uses your browser's speech recognition, which may send your voice (never your script) to the browser's speech service.
 - **Fits anywhere.** Light and dark themes, phones and tablets, and an interface in English and Simplified Chinese.
 - **Tiny.** Plain HTML, CSS and JavaScript modules. No framework, no dependencies, no build step.
 
@@ -77,6 +78,7 @@ Page titles are cues for you and are not counted as speech. Lines before the fir
 | Stage | <kbd>←</kbd> <kbd>→</kbd> | Previous / next page |
 | Stage | <kbd>↑</kbd> <kbd>↓</kbd> | Pace ±10 |
 | Stage | <kbd>+</kbd> <kbd>−</kbd> | Text size |
+| Stage | <kbd>V</kbd> | Voice follow on / off |
 | Stage | <kbd>M</kbd> / <kbd>F</kbd> | Mirror / full screen |
 | Stage | <kbd>Esc</kbd> | Back to editing |
 
@@ -105,6 +107,8 @@ public/
   index.html
   src/format.js   script parsing, word counts and timing (pure, tested)
   src/stage.js    the prompting stage: reading line, scrolling, keys
+  src/follow.js   voice follow: matching what was heard to the script (pure, tested)
+  src/voice.js    the browser's speech recognition, kept running
   src/app.js      editor, saving, import and export
   src/i18n.js     interface text and the sample scripts
   src/styles.css  design tokens from Dokki Fusion
@@ -116,7 +120,6 @@ scripts/serve.js  a zero-dependency dev server
 
 Ideas we'd like help with. Pick one, or [open an issue](https://github.com/Noxr3/online-teleprompter/issues/new/choose) with your own.
 
-- Voice follow: scroll by listening to the speaker
 - Share a script as a link, with no server involved
 - A library of several scripts
 - A countdown before playback starts

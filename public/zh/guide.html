@@ -40,6 +40,7 @@
           { "@type": "Question", "name": "讲稿会上传到服务器吗？", "acceptedAnswer": { "@type": "Answer", "text": "不会。讲稿只保存在你自己浏览器的本地存储里，没有服务器、没有账号、不做统计。" } },
           { "@type": "Question", "name": "和其他网页提词器有什么不同？", "acceptedAnswer": { "@type": "Answer", "text": "大多数网页提词器按固定的像素/秒滚动，字号和句子长短一变节奏就变。在线提词器按每一行的字数决定停留时间，无论字号多大都保持同样的字/分语速。" } },
           { "@type": "Question", "name": "语速设多少合适？", "acceptedAnswer": { "@type": "Answer", "text": "中文默认 280 字/分，演讲常见在每分钟两三百字之间；英文默认 150 词/分。也可以直接填讲话时长，自动算出语速。" } },
+          { "@type": "Question", "name": "能跟着我的声音滚动吗？", "acceptedAnswer": { "@type": "Answer", "text": "能。打开跟读后，讲稿会跟着你说话的位置滚动，停下来会等你，识别错几个字也能跟上。跟读使用 Chrome、Edge 或 Safari 自带的语音识别，声音可能会发送到浏览器厂商的语音服务，讲稿本身不会发送。默认关闭。" } },
           { "@type": "Question", "name": "能配合提词玻璃使用吗？", "acceptedAnswer": { "@type": "Answer", "text": "可以。镜像模式会把文字水平翻转，适配分光提词玻璃，在提词界面按 M 键开启。" } },
           { "@type": "Question", "name": "手机和平板能用吗？", "acceptedAnswer": { "@type": "Answer", "text": "能。手机浏览器可以直接使用，播放时在浏览器允许的情况下屏幕保持常亮。" } }
         ]
@@ -71,6 +72,7 @@
         <li>按说话速度滚动，而不是按像素：中文按字/分，英文按词/分。</li>
         <li>默认语速：中文 280 字/分，英文 150 词/分，每次可调 10。</li>
         <li>填写讲话时长，自动算出语速；左侧大纲标出每一页的开讲时间。</li>
+        <li>可选的跟读：你讲到哪里，讲稿就滚到哪里，支持中文和英文（Chrome、Edge、Safari）。</li>
         <li>镜像模式适配提词玻璃，支持全屏和手机。</li>
         <li>讲稿只存在你的浏览器里：没有服务器、没有账号、不做统计。</li>
       </ul>
@@ -102,6 +104,7 @@
             <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>上一页或下一页</td></tr>
             <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>语速加快或减慢 10</td></tr>
             <tr><td><kbd>+</kbd> <kbd>−</kbd></td><td>放大或缩小字号</td></tr>
+            <tr><td><kbd>V</kbd></td><td>打开或关闭跟读</td></tr>
             <tr><td><kbd>M</kbd></td><td>镜像，用于提词玻璃</td></tr>
             <tr><td><kbd>F</kbd></td><td>全屏</td></tr>
             <tr><td><kbd>Esc</kbd></td><td>回到编辑</td></tr>
@@ -116,6 +119,7 @@
       <h2>常见问题</h2>
       <details><summary>免费吗？</summary><p>免费，无需注册，没有付费版本，源代码以 Apache 2.0 协议开源。</p></details>
       <details><summary>讲稿会上传吗？</summary><p>不会。讲稿只保存在你浏览器的本地存储里。应用没有服务器、没有账号、不做统计，也不请求任何第三方资源。</p></details>
+      <details><summary>能跟着我的声音滚动吗？</summary><p>能。在提词界面按 <kbd>V</kbd> 或点麦克风按钮打开跟读：你讲到哪里，讲稿就滚到哪里；停下来它会等你，识别错几个字也能跟上，说几句题外话不会乱跳。跟读用的是浏览器自带的语音识别（Chrome、Edge 或 Safari），你的声音可能会发送到浏览器厂商的语音服务，讲稿本身不会发送。默认关闭。</p></details>
       <details><summary>语速设多少合适？</summary><p>中文默认 280 字/分，英文默认 150 词/分。也可以直接填讲话时长，让语速自动算好。</p></details>
       <details><summary>能配合提词玻璃吗？</summary><p>可以。在提词界面按 <kbd>M</kbd> 打开镜像，文字会水平翻转。</p></details>
       <details><summary>手机和 iPad 能用吗？</summary><p>能。手机浏览器可以直接使用，播放时在浏览器允许的情况下屏幕保持常亮。</p></details>
