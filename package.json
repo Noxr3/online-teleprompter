@@ -1,5 +1,5 @@
 {
-  "name": "dokki-prompter",
+  "name": "online-teleprompter",
   "version": "0.1.0",
   "description": "A clean, private teleprompter for talks and pitches. Plain HTML, CSS and JavaScript; no build step, no dependencies, no server.",
   "private": true,
@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Noxr3/dokki-prompter.git"
+    "url": "git+https://github.com/Noxr3/online-teleprompter.git"
   },
   "keywords": ["teleprompter", "prompter", "presentation", "speech", "pitch"],
   "scripts": {

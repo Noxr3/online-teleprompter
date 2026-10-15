@@ -1,7 +1,7 @@
 {
-  "name": "Dokki Prompter",
-  "short_name": "Prompter",
-  "description": "A clean, private teleprompter that runs in your browser.",
+  "name": "Online Teleprompter",
+  "short_name": "Teleprompter",
+  "description": "A free online teleprompter that scrolls at your speaking pace. Runs in your browser.",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#100f0e",

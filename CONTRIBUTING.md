@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping make Dokki Prompter better. 中文贡献者同样欢迎，Issue 和 PR 用中文或英文都可以。
+Thanks for helping make Online Teleprompter better. 中文贡献者同样欢迎，Issue 和 PR 用中文或英文都可以。
 
 ## Ground rules
 
@@ -24,4 +24,4 @@ npm test
 
 ## Good first issues
 
-Look for the [`good first issue`](https://github.com/Noxr3/dokki-prompter/labels/good%20first%20issue) label. Comment on the issue before you start so two people don't build the same thing.
+Look for the [`good first issue`](https://github.com/Noxr3/online-teleprompter/labels/good%20first%20issue) label. Comment on the issue before you start so two people don't build the same thing.

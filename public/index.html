@@ -3,19 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Dokki Prompter</title>
-  <meta name="description" content="A clean, private teleprompter for talks and pitches. Write your script, press Start, read from one line. Runs entirely in your browser.">
+  <title>Free Online Teleprompter — Scrolls at Your Speaking Pace</title>
+  <meta name="description" content="Free online teleprompter that scrolls at your speaking pace in words per minute. Paste your script, press Start and read from one line. Mirror mode, full screen, phone-friendly, no sign-up, nothing uploaded. Open source.">
+  <link rel="canonical" href="https://online-teleprompter.vercel.app/">
+  <link rel="alternate" hreflang="en" href="https://online-teleprompter.vercel.app/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://online-teleprompter.vercel.app/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://online-teleprompter.vercel.app/">
   <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#100f0e" media="(prefers-color-scheme: dark)">
-  <meta property="og:title" content="Dokki Prompter">
-  <meta property="og:description" content="A clean, private teleprompter that runs in your browser.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Online Teleprompter">
+  <meta property="og:title" content="Free Online Teleprompter — scrolls at your speaking pace">
+  <meta property="og:description" content="Paste your script, press Start, read from one line. Paced in words per minute. Free, open source, runs in your browser.">
+  <meta property="og:url" content="https://online-teleprompter.vercel.app/">
+  <meta property="og:image" content="https://online-teleprompter.vercel.app/og.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="src/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Online Teleprompter",
+    "alternateName": ["Free Online Teleprompter", "在线提词器"],
+    "url": "https://online-teleprompter.vercel.app/",
+    "description": "A free, open-source online teleprompter that scrolls at your speaking pace, measured in words per minute (characters per minute for Chinese, Japanese and Korean). Scripts stay in the browser.",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Any modern web browser",
+    "browserRequirements": "Requires JavaScript",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "inLanguage": ["en", "zh-Hans"],
+    "featureList": [
+      "Scrolls at a speaking pace in words or characters per minute",
+      "Works out the pace from the length of the talk",
+      "Reading line, stress highlights and page jumps",
+      "Mirror mode for beam-splitter teleprompter glass",
+      "Full screen and phone layout",
+      "Scripts saved only in the browser; Markdown import and export"
+    ],
+    "screenshot": "https://online-teleprompter.vercel.app/og.png",
+    "license": "https://www.apache.org/licenses/LICENSE-2.0",
+    "author": { "@type": "Person", "name": "Brad", "url": "https://github.com/Noxr3" },
+    "sameAs": ["https://github.com/Noxr3/online-teleprompter"]
+  }
+  </script>
 </head>
 <body>
   <div id="root"></div>
-  <noscript>Dokki Prompter needs JavaScript. · 提词器需要启用 JavaScript。</noscript>
+  <noscript>
+    <h1>Free Online Teleprompter</h1>
+    <p>A teleprompter that scrolls at your speaking pace. It needs JavaScript to run. Read <a href="/guide">how it works</a> or see the <a href="https://github.com/Noxr3/online-teleprompter">source code on GitHub</a>.</p>
+  </noscript>
   <script type="module" src="src/app.js"></script>
 </body>
 </html>

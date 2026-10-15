@@ -1,0 +1,22 @@
+# Online Teleprompter
+
+> A free, open-source online teleprompter (在线提词器) that scrolls at the user's speaking pace, measured in words per minute (characters per minute for Chinese, Japanese and Korean), instead of a fixed pixel speed. It runs entirely in the browser: no server, no account, no analytics; scripts stay in the browser's local storage.
+
+Key facts:
+
+- URL: https://online-teleprompter.vercel.app/ (Chinese: https://online-teleprompter.vercel.app/zh/)
+- Source: https://github.com/Noxr3/online-teleprompter (Apache-2.0)
+- Price: free, no sign-up
+- Pacing: each line stays on the reading line in proportion to the words it holds; default 150 words/min for English, 280 characters/min for Chinese; or set the talk length in minutes and the pace is calculated
+- Script format: `## Title` starts a page, one line per sentence, `**words**` are stressed
+- Stage: reading line, dimmed past lines, page jumps, pace and text-size controls, timer, mirror mode for beam-splitter teleprompter glass, full screen, screen wake lock
+- Works in desktop and mobile browsers; interface in English and Simplified Chinese
+- Import and export scripts as Markdown
+- Self-hostable static site with no dependencies and no build step; one-click deploy to Vercel
+- Made by Brad (https://github.com/Noxr3), founder of Dokki (https://dokki.one)
+
+## Docs
+
+- [How it works (English)](https://online-teleprompter.vercel.app/guide): pacing, usage, shortcuts, FAQ
+- [使用指南（中文）](https://online-teleprompter.vercel.app/zh/guide)
+- [README](https://github.com/Noxr3/online-teleprompter#readme)

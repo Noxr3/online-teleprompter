@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Use a Free Online Teleprompter | Online Teleprompter</title>
+  <meta name="description" content="How Online Teleprompter works: paste a script, set your pace in words per minute or by talk length, and read from one line. Mirror mode, keyboard shortcuts, phone use and privacy, explained.">
+  <link rel="canonical" href="https://online-teleprompter.vercel.app/guide">
+  <link rel="alternate" hreflang="en" href="https://online-teleprompter.vercel.app/guide">
+  <link rel="alternate" hreflang="zh-Hans" href="https://online-teleprompter.vercel.app/zh/guide">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to use a free online teleprompter paced in words per minute">
+  <meta property="og:description" content="Paste a script, set your pace, read from one line. Free, open source, runs in your browser.">
+  <meta property="og:url" content="https://online-teleprompter.vercel.app/guide">
+  <meta property="og:image" content="https://online-teleprompter.vercel.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="src/guide.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "name": "How to use Online Teleprompter",
+        "totalTime": "PT1M",
+        "tool": { "@type": "HowToTool", "name": "A web browser" },
+        "step": [
+          { "@type": "HowToStep", "name": "Write or paste your script", "text": "Start a page with ## Title, put one sentence per line, and wrap stressed words in **double asterisks**." },
+          { "@type": "HowToStep", "name": "Set the pace", "text": "Type how many minutes the talk should run, or set the pace in words per minute. 150 words per minute is the default for English." },
+          { "@type": "HowToStep", "name": "Press Start", "text": "Keep your eyes on the reading line. Press Space to play or pause and the arrow keys to change page or pace." }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Is Online Teleprompter free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It is free to use with no sign-up, and the source code is open under the Apache 2.0 license." } },
+          { "@type": "Question", "name": "Is my script uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. The script is saved only in your browser's local storage. The app has no server, no account and no analytics." } },
+          { "@type": "Question", "name": "How is it different from other online teleprompters?", "acceptedAnswer": { "@type": "Answer", "text": "Most web teleprompters scroll at a fixed number of pixels per second, so the pace changes with font size and line length. Online Teleprompter paces each line by how many words it holds, so it keeps a steady speaking rate in words per minute at any text size." } },
+          { "@type": "Question", "name": "What speed should I set?", "acceptedAnswer": { "@type": "Answer", "text": "Presentations are commonly delivered at about 130 to 160 words per minute; the default is 150. For Chinese the default is 280 characters per minute. You can also type the talk's length and the pace is worked out for you." } },
+          { "@type": "Question", "name": "Does it work with teleprompter glass?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Mirror mode flips the text horizontally for beam-splitter glass. Press M on the stage to turn it on." } },
+          { "@type": "Question", "name": "Can I use it on a phone or tablet?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It works in mobile browsers, and the screen stays awake while the script plays where the browser allows it." } },
+          { "@type": "Question", "name": "Does it work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Once the page has loaded it needs no network. Installing it for fully offline use is on the roadmap." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="/"><img src="icon.svg" alt="" width="28" height="28">Online Teleprompter</a>
+      <nav><a href="/zh/guide" hreflang="zh-Hans">中文</a><a href="https://github.com/Noxr3/online-teleprompter">GitHub</a></nav>
+    </header>
+
+    <main>
+      <h1>A free online teleprompter that scrolls at your speaking pace</h1>
+      <p class="lede">Paste your script, press Start, and read from one line. Online Teleprompter paces your script in words per minute, so the speed you rehearse is the speed you speak. It is free, open source, and runs entirely in your browser.</p>
+      <p><a class="cta" href="/">Open the teleprompter</a><a class="alt" href="https://github.com/Noxr3/online-teleprompter">View the source</a></p>
+
+      <figure>
+        <img src="og.png" width="1280" height="640" alt="The teleprompter stage: a reading line with the current sentence, past lines dimmed and stressed words highlighted">
+        <figcaption>The stage keeps your eyes on one reading line. Lines you've read fade out.</figcaption>
+      </figure>
+
+      <h2>Key facts</h2>
+      <ul class="facts">
+        <li>Free to use, no sign-up, open source under Apache 2.0.</li>
+        <li>Paces by speech, not pixels: words per minute for English, characters per minute for Chinese, Japanese and Korean.</li>
+        <li>Default pace: 150 words per minute, or 280 Chinese characters per minute. Adjust in steps of 10.</li>
+        <li>Type the length of your talk and the pace is worked out for you.</li>
+        <li>Mirror mode for beam-splitter teleprompter glass, full screen, and phone support.</li>
+        <li>Your script never leaves your browser: no server, no account, no analytics.</li>
+      </ul>
+
+      <h2>Why pace by words per minute?</h2>
+      <p>Most online teleprompters scroll at a fixed number of pixels per second. That speed means something different every time you change the font size, and a long sentence that wraps onto three lines rushes past while a short one lingers. Rehearse at one size and present at another, and the pace no longer matches how you talk.</p>
+      <p>Online Teleprompter measures each line by how much there is to say in it. Every line stays on the reading line for as long as it takes to say it at your chosen pace, at any text size and any screen width. If you set 150 words per minute, a 15-word sentence holds the reading line for about six seconds.</p>
+
+      <h2>How to use it</h2>
+      <ol>
+        <li><strong>Write or paste your script.</strong> Start each page or slide with <code>## Title</code>, put one sentence per line, and wrap words you want to stress in <code>**double asterisks**</code>.</li>
+        <li><strong>Set the pace.</strong> Type how many minutes the talk should run, or set words per minute directly. The page outline shows when each page starts.</li>
+        <li><strong>Press Start.</strong> Keep your eyes on the reading line. Press <kbd>Space</kbd> to play or pause.</li>
+      </ol>
+
+      <h3>Script format</h3>
+<pre><code># Product launch            ← optional: the script's name
+## Opening                  ← starts a new page
+Good morning, everyone.     ← one line is one thing you say
+Today I want to show you **one simple idea**.   ← stressed words</code></pre>
+      <p>Page titles are cues for you and are not counted as speech. You can import and export the script as a Markdown file, or drop a <code>.md</code> file onto the page.</p>
+
+      <h3>Keyboard shortcuts</h3>
+      <div class="table">
+        <table>
+          <thead><tr><th>Keys</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td><kbd>Space</kbd></td><td>Play or pause</td></tr>
+            <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>Previous or next page</td></tr>
+            <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>Pace up or down by 10</td></tr>
+            <tr><td><kbd>+</kbd> <kbd>−</kbd></td><td>Larger or smaller text</td></tr>
+            <tr><td><kbd>M</kbd></td><td>Mirror the text for teleprompter glass</td></tr>
+            <tr><td><kbd>F</kbd></td><td>Full screen</td></tr>
+            <tr><td><kbd>Esc</kbd></td><td>Back to the editor</td></tr>
+            <tr><td><kbd>⌘</kbd>/<kbd>Ctrl</kbd> + <kbd>Enter</kbd></td><td>Start from the page your cursor is on</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Who it's for</h2>
+      <p>Founders rehearsing a pitch, speakers giving a talk or webinar, people recording YouTube or course videos, and anyone reading a statement to camera on Zoom. On a laptop, put the reading line close to your webcam so your eyes stay near the lens.</p>
+
+      <h2>Questions</h2>
+      <details><summary>Is it free?</summary><p>Yes. There is no sign-up and no paid tier, and the source code is open under the Apache 2.0 license.</p></details>
+      <details><summary>Is my script uploaded anywhere?</summary><p>No. It is saved only in your browser's local storage. The app has no server, no account and no analytics, and it makes no third-party requests.</p></details>
+      <details><summary>What speed should I set?</summary><p>Presentations are commonly delivered at about 130 to 160 words per minute, and the default is 150. For Chinese the default is 280 characters per minute. Or type the talk's length and let the pace follow.</p></details>
+      <details><summary>Does it work with teleprompter glass?</summary><p>Yes. Mirror mode flips the text for beam-splitter glass. Press <kbd>M</kbd> on the stage.</p></details>
+      <details><summary>Can I use it on a phone or iPad?</summary><p>Yes. It works in mobile browsers, and the screen stays awake while the script plays where the browser allows it.</p></details>
+      <details><summary>Does it work offline?</summary><p>Once the page has loaded it needs no network. Installing it for fully offline use is on the roadmap.</p></details>
+      <details><summary>Can I host my own copy?</summary><p>Yes. It is a static site with no build step and no dependencies. Deploy it to Vercel with one click from the GitHub README, or publish the <code>public/</code> folder on any static host.</p></details>
+    </main>
+
+    <footer>
+      Online Teleprompter is open source on <a href="https://github.com/Noxr3/online-teleprompter">GitHub</a>. Made by <a href="https://github.com/Noxr3">Brad</a>, founder of <a href="https://dokki.one">Dokki</a>.
+    </footer>
+  </div>
+</body>
+</html>

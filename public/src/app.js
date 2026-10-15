@@ -4,7 +4,7 @@ import { store } from './store.js';
 import { createStage } from './stage.js';
 import { icon } from './icons.js';
 
-const REPO_URL = 'https://github.com/Noxr3/dokki-prompter';
+const REPO_URL = 'https://github.com/Noxr3/online-teleprompter';
 
 const $ = id => document.getElementById(id);
 const prefs = store.loadPrefs();
@@ -32,6 +32,7 @@ $('root').innerHTML = `
         <button role="menuitem" type="button" data-act="sample">${icon.sample}${t('loadSample')}</button>
         <div class="sep" role="separator"></div>
         <button role="menuitem" type="button" data-act="lang">${icon.globe}${t('switchLang')}</button>
+        <a role="menuitem" href="${t('guideHref')}">${icon.sample}${t('guide')}</a>
         <a role="menuitem" href="${REPO_URL}" target="_blank" rel="noopener">${icon.code}${t('source')}</a>
       </div>
     </div>

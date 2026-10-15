@@ -1,7 +1,7 @@
 // UI copy and the welcome script, in Simplified Chinese and English.
 
 const zh = {
-  appName: '提词器',
+  appName: '在线提词器',
   docName: '讲稿名称',
   titlePlaceholder: '给讲稿起个名字',
   untitledPage: '未命名的一页',
@@ -59,11 +59,13 @@ const zh = {
   fullscreen: '全屏（F）',
   stageLabel: '讲稿，点按开始或暂停',
   ended: '讲稿结束',
-  starCta: '开源 · 在 GitHub 点个 Star'
+  starCta: '开源 · 在 GitHub 点个 Star',
+  guide: '使用指南',
+  guideHref: '/zh/guide'
 };
 
 const en = {
-  appName: 'Prompter',
+  appName: 'Online Teleprompter',
   docName: 'Script name',
   titlePlaceholder: 'Name your script',
   untitledPage: 'Untitled page',
@@ -121,13 +123,15 @@ const en = {
   fullscreen: 'Full screen (F)',
   stageLabel: 'Script — tap to play or pause',
   ended: 'End of script',
-  starCta: 'Open source · Star on GitHub'
+  starCta: 'Open source · Star on GitHub',
+  guide: 'How it works',
+  guideHref: '/guide'
 };
 
 const samples = {
   zh: {
     title: '示例讲稿',
-    text: `## 欢迎使用 Dokki 提词器
+    text: `## 欢迎使用在线提词器
 这是一份示例讲稿，你可以直接把它改成自己的。
 写法只有三条规则。
 以两个井号开头的一行，会开始新的一页。
@@ -148,7 +152,7 @@ const samples = {
   },
   en: {
     title: 'Sample script',
-    text: `## Welcome to Dokki Prompter
+    text: `## Welcome to Online Teleprompter
 This is a sample script. Replace it with your own.
 There are only three rules.
 A line that starts with two hash marks begins a new page.
@@ -170,7 +174,9 @@ To move it to another device, export it as Markdown and import it there.
 };
 
 export function createI18n(saved) {
-  const lang = saved === 'zh' || saved === 'en' ? saved : (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : 'en';
+  // A saved choice wins, then the page's own language (/zh/ is the Chinese page), then the browser's.
+  const pageLang = document.documentElement.lang.toLowerCase().startsWith('zh') ? 'zh' : null;
+  const lang = saved === 'zh' || saved === 'en' ? saved : pageLang || ((navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : 'en');
   const dict = lang === 'zh' ? zh : en;
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
   const t = (key, vars = {}) => (dict[key] ?? key).replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? '');

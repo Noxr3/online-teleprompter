@@ -7,4 +7,5 @@
 - Pace in words or characters per minute, or worked out from the talk's length.
 - Autosave to the browser, Markdown import and export, drag-and-drop import.
 - English and Simplified Chinese interface; light and dark themes; phone layout.
+- Search-friendly pages: a crawlable guide in English and Chinese, structured data, sitemap and llms.txt.
 - Static deployment with no build step; Vercel config with a strict Content Security Policy.

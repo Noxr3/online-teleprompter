@@ -1,18 +1,19 @@
 <p align="center">
-  <img src="docs/assets/logo-mark.svg" width="72" height="72" alt="Dokki Prompter 标志">
+  <img src="docs/assets/logo-mark.svg" width="72" height="72" alt="在线提词器标志">
 </p>
 
-<h1 align="center">Dokki Prompter 提词器</h1>
+<h1 align="center">在线提词器 Online Teleprompter</h1>
 
 <p align="center">
-  <b>按你说话的速度滚动的提词器。</b><br>
+  <b>按你说话速度滚动的免费在线提词器。</b><br>
   写好讲稿，点「开始提词」，眼睛只看一条阅读线。<br>
   免费、开源，讲稿永远不离开你的浏览器。
 </p>
 
 <p align="center">
-  <a href="https://dokki-prompter.vercel.app"><b>在线试用</b></a> ·
+  <a href="https://online-teleprompter.vercel.app/zh/"><b>在线试用</b></a> ·
   <a href="README.md">English</a> ·
+  <a href="https://online-teleprompter.vercel.app/zh/guide">使用指南</a> ·
   <a href="#部署自己的版本">部署自己的版本</a>
 </p>
 
@@ -24,7 +25,7 @@
 
 大多数网页提词器按固定的「像素/秒」滚动。字号一变，或者遇到一句长句，排练时的节奏就和实际说话对不上了。
 
-Dokki 提词器按 **字/分**（英文按 **词/分**）控制节奏：每一行在阅读线上停留多久，取决于这一行有多少字。所以无论字号多大，长句和短句都按同样的语速走。你也可以直接告诉它「这场要讲几分钟」，语速会自动算好。
+在线提词器按 **字/分**（英文按 **词/分**）控制节奏：每一行在阅读线上停留多久，取决于这一行有多少字。所以无论字号多大，长句和短句都按同样的语速走。你也可以直接告诉它「这场要讲几分钟」，语速会自动算好。
 
 ## 功能
 
@@ -69,7 +70,7 @@ Dokki 提词器按 **字/分**（英文按 **词/分**）控制节奏：每一�
 
 ## 部署自己的版本
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNoxr3%2Fdokki-prompter&project-name=dokki-prompter&repository-name=dokki-prompter)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNoxr3%2Fonline-teleprompter&project-name=online-teleprompter&repository-name=online-teleprompter)
 
 这是一个纯静态网站，所有内容都在 [`public/`](public) 目录里。
 
@@ -81,15 +82,15 @@ Dokki 提词器按 **字/分**（英文按 **词/分**）控制节奏：每一�
 只需要 Node.js 20 或更新版本。
 
 ```bash
-git clone https://github.com/Noxr3/dokki-prompter.git
-cd dokki-prompter
+git clone https://github.com/Noxr3/online-teleprompter.git
+cd online-teleprompter
 npm run dev     # http://localhost:5173
 npm test        # 讲稿格式与计时的单元测试
 ```
 
 ## 路线图
 
-欢迎认领，或者[提一个新想法](https://github.com/Noxr3/dokki-prompter/issues/new/choose)。
+欢迎认领，或者[提一个新想法](https://github.com/Noxr3/online-teleprompter/issues/new/choose)。
 
 - 跟读：听着讲话自动滚动
 - 不经过服务器，用一个链接分享讲稿

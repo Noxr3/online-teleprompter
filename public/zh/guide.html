@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>在线提词器怎么用：按字/分控制语速的免费提词器 | 在线提词器</title>
+  <meta name="description" content="在线提词器使用指南：粘贴讲稿，按字/分或讲话时长设置语速，眼睛只看一条阅读线。镜像提词玻璃、快捷键、手机使用和隐私说明。免费开源。">
+  <link rel="canonical" href="https://online-teleprompter.vercel.app/zh/guide">
+  <link rel="alternate" hreflang="en" href="https://online-teleprompter.vercel.app/guide">
+  <link rel="alternate" hreflang="zh-Hans" href="https://online-teleprompter.vercel.app/zh/guide">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="在线提词器怎么用：按字/分控制语速的免费提词器">
+  <meta property="og:description" content="粘贴讲稿，设好语速，只看一条阅读线。免费、开源，讲稿只存在你的浏览器里。">
+  <meta property="og:url" content="https://online-teleprompter.vercel.app/zh/guide">
+  <meta property="og:image" content="https://online-teleprompter.vercel.app/og-zh.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../src/guide.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "name": "如何使用在线提词器",
+        "inLanguage": "zh-Hans",
+        "totalTime": "PT1M",
+        "step": [
+          { "@type": "HowToStep", "name": "写或粘贴讲稿", "text": "用 ## 标题 开始新的一页，每行一句，用两对星号把要重读的字包起来。" },
+          { "@type": "HowToStep", "name": "设置语速", "text": "填写这场要讲几分钟，或直接设置字/分。中文默认 280 字/分。" },
+          { "@type": "HowToStep", "name": "点「开始提词」", "text": "眼睛看着阅读线。空格开始或暂停，方向键翻页或调整语速。" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "inLanguage": "zh-Hans",
+        "mainEntity": [
+          { "@type": "Question", "name": "在线提词器免费吗？", "acceptedAnswer": { "@type": "Answer", "text": "免费，无需注册，源代码以 Apache 2.0 协议开源。" } },
+          { "@type": "Question", "name": "讲稿会上传到服务器吗？", "acceptedAnswer": { "@type": "Answer", "text": "不会。讲稿只保存在你自己浏览器的本地存储里，没有服务器、没有账号、不做统计。" } },
+          { "@type": "Question", "name": "和其他网页提词器有什么不同？", "acceptedAnswer": { "@type": "Answer", "text": "大多数网页提词器按固定的像素/秒滚动，字号和句子长短一变节奏就变。在线提词器按每一行的字数决定停留时间，无论字号多大都保持同样的字/分语速。" } },
+          { "@type": "Question", "name": "语速设多少合适？", "acceptedAnswer": { "@type": "Answer", "text": "中文默认 280 字/分，演讲常见在每分钟两三百字之间；英文默认 150 词/分。也可以直接填讲话时长，自动算出语速。" } },
+          { "@type": "Question", "name": "能配合提词玻璃使用吗？", "acceptedAnswer": { "@type": "Answer", "text": "可以。镜像模式会把文字水平翻转，适配分光提词玻璃，在提词界面按 M 键开启。" } },
+          { "@type": "Question", "name": "手机和平板能用吗？", "acceptedAnswer": { "@type": "Answer", "text": "能。手机浏览器可以直接使用，播放时在浏览器允许的情况下屏幕保持常亮。" } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="/zh/"><img src="../icon.svg" alt="" width="28" height="28">在线提词器</a>
+      <nav><a href="/guide" hreflang="en">English</a><a href="https://github.com/Noxr3/online-teleprompter">GitHub</a></nav>
+    </header>
+
+    <main>
+      <h1>按你说话速度滚动的免费在线提词器</h1>
+      <p class="lede">粘贴讲稿，点「开始提词」，眼睛只看一条阅读线。在线提词器按「字/分」控制节奏，排练时的语速就是你上台时的语速。免费、开源，完全在浏览器里运行。</p>
+      <p><a class="cta" href="/zh/">打开提词器</a><a class="alt" href="https://github.com/Noxr3/online-teleprompter">查看源代码</a></p>
+
+      <figure>
+        <img src="../og-zh.png" width="1280" height="640" alt="提词界面：阅读线上是当前这一句，读过的行变暗，重音高亮">
+        <figcaption>提词界面让你只看一条阅读线，读过的行会变暗。</figcaption>
+      </figure>
+
+      <h2>要点</h2>
+      <ul class="facts">
+        <li>免费使用，无需注册，以 Apache 2.0 协议开源。</li>
+        <li>按说话速度滚动，而不是按像素：中文按字/分，英文按词/分。</li>
+        <li>默认语速：中文 280 字/分，英文 150 词/分，每次可调 10。</li>
+        <li>填写讲话时长，自动算出语速；左侧大纲标出每一页的开讲时间。</li>
+        <li>镜像模式适配提词玻璃，支持全屏和手机。</li>
+        <li>讲稿只存在你的浏览器里：没有服务器、没有账号、不做统计。</li>
+      </ul>
+
+      <h2>为什么按「字/分」控制语速？</h2>
+      <p>大多数网页提词器按固定的「像素/秒」滚动。字号一变，同样的速度就代表完全不同的语速；一句折成三行的长句会匆匆滑过，短句却停留太久。用一种字号排练、换一种字号上台，节奏就对不上了。</p>
+      <p>在线提词器按每一行有多少字决定它在阅读线上停留多久。设成 280 字/分，一句 28 个字的话大约停留 6 秒，无论字号大小、屏幕宽窄都一样。</p>
+
+      <h2>怎么用</h2>
+      <ol>
+        <li><strong>写或粘贴讲稿。</strong>用 <code>## 标题</code> 开始新的一页（比如每张幻灯片一页），每行一句，用 <code>**两对星号**</code> 包住要重读的字。</li>
+        <li><strong>设置语速。</strong>填写这场要讲几分钟，或者直接设置字/分。左侧大纲会显示每一页的开讲时间。</li>
+        <li><strong>点「开始提词」。</strong>眼睛看着阅读线，按 <kbd>空格</kbd> 开始或暂停。</li>
+      </ol>
+
+      <h3>讲稿写法</h3>
+<pre><code># 产品发布会                   ← 可选：讲稿名称
+## 开场                        ← 开始新的一页
+大家早上好。                    ← 每一行是一句话
+今天我想分享 **一个简单的想法**。  ← 重音</code></pre>
+      <p>页标题只是给你看的提示，不计入讲话时长。讲稿可以导入、导出为 Markdown 文件，也可以直接把 <code>.md</code> 文件拖进页面。</p>
+
+      <h3>快捷键</h3>
+      <div class="table">
+        <table>
+          <thead><tr><th>按键</th><th>作用</th></tr></thead>
+          <tbody>
+            <tr><td><kbd>空格</kbd></td><td>开始或暂停</td></tr>
+            <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>上一页或下一页</td></tr>
+            <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>语速加快或减慢 10</td></tr>
+            <tr><td><kbd>+</kbd> <kbd>−</kbd></td><td>放大或缩小字号</td></tr>
+            <tr><td><kbd>M</kbd></td><td>镜像，用于提词玻璃</td></tr>
+            <tr><td><kbd>F</kbd></td><td>全屏</td></tr>
+            <tr><td><kbd>Esc</kbd></td><td>回到编辑</td></tr>
+            <tr><td><kbd>⌘</kbd>/<kbd>Ctrl</kbd> + <kbd>Enter</kbd></td><td>从光标所在的页开始提词</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>适合谁用</h2>
+      <p>排练路演的创业者、做演讲和直播的讲者、录制 B 站、YouTube 或课程视频的创作者，以及需要在视频会议里对着镜头念稿的人。在笔记本上使用时，把阅读线放在靠近摄像头的位置，眼神会更自然。</p>
+
+      <h2>常见问题</h2>
+      <details><summary>免费吗？</summary><p>免费，无需注册，没有付费版本，源代码以 Apache 2.0 协议开源。</p></details>
+      <details><summary>讲稿会上传吗？</summary><p>不会。讲稿只保存在你浏览器的本地存储里。应用没有服务器、没有账号、不做统计，也不请求任何第三方资源。</p></details>
+      <details><summary>语速设多少合适？</summary><p>中文默认 280 字/分，英文默认 150 词/分。也可以直接填讲话时长，让语速自动算好。</p></details>
+      <details><summary>能配合提词玻璃吗？</summary><p>可以。在提词界面按 <kbd>M</kbd> 打开镜像，文字会水平翻转。</p></details>
+      <details><summary>手机和 iPad 能用吗？</summary><p>能。手机浏览器可以直接使用，播放时在浏览器允许的情况下屏幕保持常亮。</p></details>
+      <details><summary>能离线使用吗？</summary><p>页面加载完成后不需要网络。可安装、完全离线的版本在路线图中。</p></details>
+      <details><summary>能自己部署吗？</summary><p>可以。它是没有构建步骤、没有依赖的静态网站。可以在 GitHub README 里一键部署到 Vercel，或者把 <code>public/</code> 目录发布到任意静态托管。</p></details>
+    </main>
+
+    <footer>
+      在线提词器在 <a href="https://github.com/Noxr3/online-teleprompter">GitHub</a> 开源。由 <a href="https://github.com/Noxr3">Brad</a> 制作，他也是 <a href="https://dokki.one">Dokki</a> 的创始人。
+    </footer>
+  </div>
+</body>
+</html>

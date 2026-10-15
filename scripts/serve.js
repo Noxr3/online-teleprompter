@@ -15,12 +15,15 @@ const types = {
   '.webmanifest': 'application/manifest+json',
   '.png': 'image/png',
   '.ico': 'image/x-icon',
-  '.md': 'text/markdown; charset=utf-8'
+  '.md': 'text/markdown; charset=utf-8',
+  '.txt': 'text/plain; charset=utf-8',
+  '.xml': 'application/xml; charset=utf-8'
 };
 
 createServer(async (req, res) => {
   let path = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
   if (path.endsWith('/')) path += 'index.html';
+  else if (!extname(path)) path += '.html'; // like Vercel's cleanUrls
   const file = normalize(join(root, path));
   if (!file.startsWith(root.endsWith(sep) ? root : root + sep)) {
     res.writeHead(403).end();
@@ -33,4 +36,4 @@ createServer(async (req, res) => {
   } catch {
     res.writeHead(404, { 'content-type': 'text/plain; charset=utf-8' }).end('Not found');
   }
-}).listen(port, () => console.log(`Dokki Prompter → http://localhost:${port}`));
+}).listen(port, () => console.log(`Online Teleprompter → http://localhost:${port}`));

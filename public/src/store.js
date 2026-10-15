@@ -1,10 +1,12 @@
 // Everything stays in this browser's localStorage. There is no server.
 
-const DOC_KEY = 'dokki-prompter:doc:v1';
-const PREFS_KEY = 'dokki-prompter:prefs:v1';
+const DOC_KEY = 'online-teleprompter:doc:v1';
+const PREFS_KEY = 'online-teleprompter:prefs:v1';
+// Scripts saved before the project was renamed.
+const LEGACY = { 'online-teleprompter:doc:v1': 'dokki-prompter:doc:v1', 'online-teleprompter:prefs:v1': 'dokki-prompter:prefs:v1' };
 
 function read(key) {
-  try { return JSON.parse(localStorage.getItem(key)); } catch { return null; }
+  try { return JSON.parse(localStorage.getItem(key) ?? localStorage.getItem(LEGACY[key])); } catch { return null; }
 }
 function write(key, value) {
   try { localStorage.setItem(key, JSON.stringify(value)); return true; } catch { return false; }
