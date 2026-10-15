@@ -1,0 +1,20 @@
+{
+  "name": "dokki-prompter",
+  "version": "0.1.0",
+  "description": "A clean, private teleprompter for talks and pitches. Plain HTML, CSS and JavaScript; no build step, no dependencies, no server.",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dokki-lab/dokki-prompter.git"
+  },
+  "keywords": ["teleprompter", "prompter", "presentation", "speech", "pitch"],
+  "scripts": {
+    "dev": "node scripts/serve.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

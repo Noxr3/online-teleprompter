@@ -1,0 +1,10 @@
+{
+  "name": "Dokki Prompter",
+  "short_name": "Prompter",
+  "description": "A clean, private teleprompter that runs in your browser.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#100f0e",
+  "theme_color": "#100f0e",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
