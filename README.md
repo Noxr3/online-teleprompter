@@ -44,6 +44,7 @@ Online Teleprompter paces the script in **words per minute** (characters per min
 - **Ready for real rigs.** Mirror mode for beam-splitter glass, full screen, and the screen stays awake while it plays.
 - **Private by design.** No server, no account, no analytics, no third-party requests. The script saves to your device; import and export Markdown, or drop a `.md` file on the page. Voice follow is off until you turn it on; it uses your browser's speech recognition, which may send your voice (never your script) to the browser's speech service.
 - **Fits anywhere.** Light and dark themes, phones and tablets, and an interface in English and Simplified Chinese.
+- **Reopen offline.** Open the app online once to cache its public app shell, then reopen the same address without a connection. Your script stays in the existing local storage; the worker does not cache it. Voice follow may still need a connection.
 - **Tiny.** Plain HTML, CSS and JavaScript modules. No framework, no dependencies, no build step.
 
 <table>
@@ -91,6 +92,8 @@ It's a static site: everything served is in [`public/`](public).
 - **Vercel**: use the button above, or import the repository. There is nothing to configure; [`vercel.json`](vercel.json) sets the output directory and security headers.
 - **Anywhere else** (GitHub Pages, Cloudflare Pages, Netlify, an Nginx box): publish the `public/` directory.
 
+Offline support needs HTTPS (or localhost) and browser storage permission. The worker caches only the two app pages and their local code, stylesheet, icon and manifest; guide pages and external links still need a connection. Updates wait until all app tabs close. When changing an app-shell file, bump the cache version in `public/sw.js` so the next visit installs a fresh shell.
+
 ## Develop
 
 Requires Node.js 20 or newer, and nothing else.
@@ -124,7 +127,6 @@ Ideas we'd like help with. Pick one, or [open an issue](https://github.com/Noxr3
 - A library of several scripts
 - A countdown before playback starts
 - Remote control from a phone
-- Offline install as a PWA
 
 ## Contributing
 
