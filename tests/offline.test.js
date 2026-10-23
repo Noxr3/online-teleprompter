@@ -5,9 +5,9 @@ import vm from 'node:vm';
 
 const source = await readFile(new URL('../public/sw.js', import.meta.url), 'utf8');
 const scope = 'https://example.test/prompter/';
-const prefix = `online-teleprompter-shell:${scope}:`;
+const prefix = `online-teleprompter-shell:${encodeURIComponent(scope)}:`;
 
-function worker({ cached, installError, keys = [] } = {}) {
+function worker({ cached, installError, keys = [], registrationScope = scope } = {}) {
   const handlers = new Map();
   const writes = [];
   const deleted = [];
@@ -16,7 +16,7 @@ function worker({ cached, installError, keys = [] } = {}) {
   vm.runInNewContext(source, {
     URL, Request,
     self: {
-      registration: { scope },
+      registration: { scope: registrationScope },
       addEventListener: (type, handler) => handlers.set(type, handler),
       clients: { claim: async () => { claimed = true; } }
     },
@@ -95,6 +95,16 @@ test('arbitrary URLs, query strings, other origins and non-GET requests are not 
 
 test('activation removes only this scope\'s old shell caches', async () => {
   const w = worker({ keys: [`${prefix}v0`, `${prefix}v1`, 'unrelated-cache', 'online-teleprompter-shell:https://example.test/other/:v0'] });
+  await w.dispatch('activate');
+  assert.deepEqual(w.deleted, [`${prefix}v0`]);
+  assert.equal(w.claimed(), true);
+});
+
+test('activation preserves the installed shell of a nested colon scope', async () => {
+  const nested = worker({ registrationScope: `${scope}:secondary/` });
+  await nested.dispatch('install');
+  const nestedCache = nested.writes[0].name;
+  const w = worker({ keys: [`${prefix}v0`, `${prefix}v1`, nestedCache, 'unrelated-cache'] });
   await w.dispatch('activate');
   assert.deepEqual(w.deleted, [`${prefix}v0`]);
   assert.equal(w.claimed(), true);

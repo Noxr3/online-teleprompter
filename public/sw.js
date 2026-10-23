@@ -1,6 +1,7 @@
 // Bump the version whenever an app-shell file changes. An update waits until
 // existing tabs close, so a running stage keeps one consistent set of files.
-const PREFIX = `online-teleprompter-shell:${self.registration.scope}:`;
+// Encode the whole scope so path colons cannot impersonate the version separator.
+const PREFIX = `online-teleprompter-shell:${encodeURIComponent(self.registration.scope)}:`;
 const CACHE = `${PREFIX}v1`;
 const SHELL = [
   './', './zh/', './icon.svg', './manifest.webmanifest',
