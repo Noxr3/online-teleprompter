@@ -318,3 +318,10 @@ ta.setSelectionRange(0, 0);
 renderEdit();
 renderStatus();
 if (!store.loadDoc()) changed();
+
+// Offline support is optional: a blocked worker or unavailable storage must not
+// prevent the editor or stage from working normally online.
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register(new URL('../sw.js', import.meta.url), { updateViaCache: 'none' })
+    .catch(() => {});
+}
